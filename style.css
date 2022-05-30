@@ -1,6 +1,6 @@
 #container {
     display: grid;
-    grid-template: 1fr 3fr 1fr / 1fr 4fr 1fr;
+    grid-template: 1fr 3fr 1fr / 1fr 3fr 1fr;
     grid-template-areas: 
     "left-bar header header"
     "left-bar main right-bar"
@@ -10,13 +10,51 @@
 }
 
 #left-bar {
+    color: white;
     grid-area: left-bar;
+    background-color: #468CFB;
+    padding: 5px;
 }
+
+#left-bar h2 {
+    font-size: 1.8rem;
+}
+
+#left-bar h3 {
+    font-size: 1.5rem;
+    margin: .6rem;
+    margin-left: 0;
+    margin-right: .2rem;
+}
+#one, #two, #three {
+    display: grid;
+    grid: auto-flow / 30% 100%;
+}
+
+#two {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#main-icon {
+    width: 60px;
+}
+
+.icon {
+    color: white;
+    place-self: center;
+}
+
 
 #header {
     grid-area: header;
+    box-shadow: 0px 8px 3px -5px lightslategrey;
+    z-index: 1;
 }
 
+#main, #right-bar {
+    background-color: rgb(218, 221, 233);
+}
 #main {
     grid-area: main;
 }
