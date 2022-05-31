@@ -99,7 +99,9 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-bottom: 0px;
     margin-inline: 40px;
+    margin-top: 20px;
 }
 
 #user-icon-large {
@@ -110,6 +112,7 @@ body {
 #greeting-box {
     display: flex;
     flex-direction: column;
+    margin-right: auto;
 }
 
 #greeting, #user-name {
@@ -133,6 +136,7 @@ body {
     height: 40px;
     border: none;
     border-radius: 20px;
+    margin: 20px;
 }
 
 #header-bottom button:hover {
