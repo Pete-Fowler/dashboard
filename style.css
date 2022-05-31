@@ -152,8 +152,28 @@ body {
 #main, #right-bar {
     background-color: rgb(218, 221, 233);
 }
+
 #main {
     grid-area: main;
+    overflow: scroll;
+}
+
+#main-grid {
+    display: grid;
+    grid-template-rows: minmax(225px, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+    
+
+}
+
+.card {
+    background-color: white;
+    border-left: 10px solid #F5B94E;
+    border-radius: 10px;
+    width: 450px;
+    height: 225px;
+    place-self: center;
 }
 
 #right-bar {
