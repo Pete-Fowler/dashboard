@@ -1,5 +1,12 @@
+@font-face {
+    font-family: roboto;
+    src: url(./assets/Roboto-Regular.ttf);
+}
+
 body {
     margin: 0px;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 #container {
@@ -161,7 +168,7 @@ body {
 
 #main-grid {
     display: grid;
-    height: calc(100% - 57px);
+    height: calc(100% - 58px);
     grid-template-rows: 200px 200px 200px;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
@@ -228,18 +235,18 @@ body {
 
 #trending-box, #announcements-box {
     background-color: white;
-    width: 95%;
+    box-sizing: border-box;
+    width: 90%;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px darkgray;
 }
 
 #announcements-box {
     height: 300px;
-    /*calc(100% - 57px);*/
+    padding: 10px 0px;
     display: grid;
     grid: 1fr 1fr 1fr / 1fr;
     overflow: hidden;
-    text-overflow: ellipsis;
     place-items: center;
 }
 
@@ -250,11 +257,11 @@ body {
 }
 
 .announcement h3 {
-    margin: 5px 5px;
+    margin: 5px 0px 0px 2px;
 }
 
 .announcement p {
-    margin: 3px 3px;
+    margin: 2px 2px;
     
 }
 
@@ -263,6 +270,26 @@ hr {
 }
 
 #trending-box {
-    height: calc(100% - 120px);
+    height: 282px;
+    display: grid;
+    place-items: center;
+    grid: repeat(4, 1fr) / 1fr 3fr;
+    overflow: auto;
 }
 
+#trending-box img {
+    width: 48px;
+    height: 48px;
+}
+
+#trending-box h4 {
+    margin: 2px 2px 0px 2px;
+}
+
+#trending-box p {
+    margin: 2px 2px;
+}
+
+.trend {
+    justify-self: flex-start;
+}
