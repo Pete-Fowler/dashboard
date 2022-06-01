@@ -226,8 +226,6 @@ body {
     height: 100%;
 }
 
-
-
 #trending-box, #announcements-box {
     background-color: white;
     width: 95%;
@@ -236,7 +234,27 @@ body {
 }
 
 #announcements-box {
-    height: calc(100% - 57px);
+    height: 350px;
+    /*calc(100% - 57px);*/
+    display: grid;
+    grid: 1fr 1fr 1fr / 1fr;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.announcement {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-block: 5px;
+    padding-inline: 10px;
+}
+
+.announcement h3 {
+    margin: 5px 5px;
+}
+
+.announcement p {
+    margin: 3px 3px;
 }
 
 #trending-box {
