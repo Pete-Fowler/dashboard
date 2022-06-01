@@ -132,8 +132,8 @@ body {
     background-color: #468CFB;
     font-size: 1rem;
     font-weight: 700;
-    width: 90px;
-    height: 40px;
+    width: 100px;
+    height: 45px;
     border: none;
     border-radius: 20px;
     margin: 20px;
@@ -155,25 +155,55 @@ body {
 
 #main {
     grid-area: main;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 #main-grid {
     display: grid;
-    grid-template-rows: minmax(225px, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 20px;
     
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
 
+#projects-headline {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: white;
     border-left: 10px solid #F5B94E;
     border-radius: 10px;
-    width: 450px;
-    height: 225px;
+    width: 400px;
+    height: 200px;
     place-self: center;
+    overflow: hidden;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    margin-block: 5px;
+    overflow: hidden;
+}
+
+.card h2, .card p {
+    padding-inline: 20px;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #right-bar {
