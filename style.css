@@ -234,19 +234,19 @@ body {
 }
 
 #announcements-box {
-    height: 350px;
+    height: 300px;
     /*calc(100% - 57px);*/
     display: grid;
     grid: 1fr 1fr 1fr / 1fr;
     overflow: hidden;
     text-overflow: ellipsis;
+    place-items: center;
 }
 
 .announcement {
-    text-overflow: ellipsis;
+    width: 80%;
+    height: 95%;
     overflow: hidden;
-    padding-block: 5px;
-    padding-inline: 10px;
 }
 
 .announcement h3 {
@@ -255,6 +255,11 @@ body {
 
 .announcement p {
     margin: 3px 3px;
+    
+}
+
+hr {
+    margin: 2px;
 }
 
 #trending-box {
