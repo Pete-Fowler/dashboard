@@ -60,7 +60,8 @@ body {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-inline: 40px;
+    margin-right: 70px;
+    margin-left: 50px;
     gap: 20px;
 }
 
@@ -160,8 +161,7 @@ body {
 
 #main-grid {
     display: grid;
-    
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -178,8 +178,9 @@ body {
     background-color: white;
     border-left: 10px solid #F5B94E;
     border-radius: 10px;
-    width: 400px;
+    width: 90%;
     height: 200px;
+    box-shadow: 2px 2px 2px 2px darkgray;
     place-self: center;
     overflow: hidden;
 }
@@ -200,7 +201,7 @@ body {
 .icon-box {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 15px;
     margin-top: auto;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -208,4 +209,12 @@ body {
 
 #right-bar {
     grid-area: right-bar;
+    display: grid;
+    grid: 1fr 1fr / 1fr;
+}
+
+#announcements-box, #trending-box {
+    background-color: white;
+    width: 95%;
+    height: 95%;
 }
